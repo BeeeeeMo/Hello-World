@@ -13,6 +13,7 @@ obj = {
 			"is_recurring": false,
 			"uuid": "00000000-0000-0000-0000-000000000000",
 			"group_name": "unlimited",
+			"next_billing_ts": "2099-12-21T16:35:45Z",
 			"status": "trial",
 			"price": {
 				"amount": "5690.000000",

@@ -5,18 +5,17 @@ obj = {
 	"services": [{
 		"service": "unlimited",
 		"is_infinite": true,
-		"active_since_ts": "2020-11-16T00:00:00.000000Z",
+		"active_since_ts": "2020-12-07T16:35:48.738672Z",
 		"payment_provider": "apple-in-app",
 		"product_name": "unlimited-lifetime",
 		"title": "Lingvist \u7121\u9650\u7248\uff0c\u55ae\u5e74\u4ed8\u8cbb",
 		"subscription": {
-			"is_recurring": false,
+			"is_recurring": true,
 			"uuid": "00000000-0000-0000-0000-000000000000",
 			"group_name": "unlimited",
-			"next_billing_ts": "2099-12-21T16:35:45Z",
 			"status": "trial",
 			"price": {
-				"amount": "5690.000000",
+				"amount": "2490.000000",
 				"currency": "TWD"
 			}
 		},

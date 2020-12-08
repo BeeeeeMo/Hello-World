@@ -12,8 +12,10 @@ if (get(['data', 'viewer', 'me'], obj)){
         "planType": "PlusTeacher",
         "__typename": "Premium"
     }
+    console.log('Done');
     $done(obj);
 } else {
+    console.log('pass');
     $done(body);
 };
 

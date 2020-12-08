@@ -12,7 +12,7 @@ if (get(['data', 'viewer', 'me'], obj)){
         "planType": "PlusTeacher",
         "__typename": "Premium"
     }
-    console.log(obj);
+    console.log(obj['data']['viewer']['me']['premium']);
     $done(obj);
 } else {
     console.log('pass');

@@ -12,7 +12,7 @@ if (get(['data', 'viewer', 'me'], obj)){
         "planType": "PlusTeacher",
         "__typename": "Premium"
     }
-    $done({body:JSON.stringify(obj)});
+    $done(JSON.stringify(obj));
 } else {
     console.log('pass');
     $done(body);

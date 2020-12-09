@@ -27,6 +27,6 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
         }
     };
     $notify('title', 'subtitle', 'message')
-    $done(obj);
+    $done(JSON.stringify(obj));
 };
 

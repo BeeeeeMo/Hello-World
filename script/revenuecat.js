@@ -20,4 +20,4 @@ obj["subscriber"]["entitlements"]= {
         "purchase_date": "2020-11-16T11:16:00Z"
     }
 };
-$done({body: JSON.stringify(obj)});
+$done(JSON.stringify(obj));

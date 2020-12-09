@@ -11,7 +11,7 @@ obj["subscriber"]["subscriptions"]= {
         "store": "app_store",
         "unsubscribe_detected_at": "2099-12-06T17:52:25Z"
     }
-    };
+};
 // obj["subscriber"]["entitlements"]= {
 //     "premium": {
 //         "expires_date": null,
@@ -20,4 +20,4 @@ obj["subscriber"]["subscriptions"]= {
 //         "purchase_date": "2020-11-16T11:16:00Z"
 //     }
 // };
-$done(JSON.stringify(obj));
+$done(obj);

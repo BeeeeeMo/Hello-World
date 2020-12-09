@@ -1,4 +1,9 @@
 let obj = JSON.parse($response.body);
+let url=$request.url;
+
+if(url.endsWith("offerings")||url.endsWith("products")) {
+	$done({});
+} else {
 obj["subscriber"]["subscriptions"]= {
     "MOZE_PRO_SUBSCRIPTION_MONTHLY_BASIC": {
         "billing_issues_detected_at": null,
@@ -20,4 +25,5 @@ obj["subscriber"]["subscriptions"]= {
 //         "purchase_date": "2020-11-16T11:16:00Z"
 //     }
 // };
+};
 $done(obj);

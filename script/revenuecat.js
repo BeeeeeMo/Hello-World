@@ -12,7 +12,12 @@ obj["subscriber"]["subscriptions"]= {
         "unsubscribe_detected_at": "2099-12-06T17:52:25Z"
     }
     };
-// obj["subscriber"]["entitlements"]= {
-
-//     };
+obj["subscriber"]["entitlements"]= {
+    "premium": {
+        "expires_date": null,
+        "grace_period_expires_date": null,
+        "product_identifier": "com.touchbyte.PhotoSync.PremiumLifetime",
+        "purchase_date": "2020-11-16T11:16:00Z"
+    }
+};
 $done({body: JSON.stringify(obj)});

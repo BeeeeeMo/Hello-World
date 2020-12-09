@@ -4,6 +4,7 @@ let url=$request.url;
 if(url.endsWith("offerings")||url.endsWith("products")) {
 	$done({});
 } else {
+    // MOZE 3.0
     obj["subscriber"]["subscriptions"]= {
         "MOZE_PRO_SUBSCRIPTION_MONTHLY_BASIC": {
             "billing_issues_detected_at": null,
@@ -17,8 +18,7 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "unsubscribe_detected_at": "2099-12-06T17:52:25Z"
         }
     };
-
-    
+    // PhotoSync 
     obj["subscriber"]["other_purchases"]= {
         "com.touchbyte.PhotoSync.PremiumLifetime": {
             "purchase_date": "2020-11-16T11:16:00Z"
@@ -41,7 +41,6 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "purchase_date": "2020-11-16T11:16:00Z"
         }
     };
-    $notify('title', 'subtitle', 'message')
     $done(JSON.stringify(obj));
 };
 

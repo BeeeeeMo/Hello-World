@@ -18,6 +18,21 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
         }
     };
 
+    
+    obj["subscriber"]["other_purchases"]= {
+        "com.touchbyte.PhotoSync.PremiumLifetime": {
+            "purchase_date": "2020-11-16T11:16:00Z"
+        }
+    };
+    obj["subscriber"]["non_subscriptions"]= {
+        "com.touchbyte.PhotoSync.PremiumLifetime": [{
+            "id": "",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-11-15T09:56:03Z",
+            "purchase_date": "2020-11-15T09:56:03Z",
+            "store": "app_store"
+        }]
+    };
     obj["subscriber"]["entitlements"]= {
         "premium": {
             "expires_date": null,

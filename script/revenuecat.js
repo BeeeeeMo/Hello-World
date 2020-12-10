@@ -23,23 +23,17 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
         "com.touchbyte.PhotoSync.PremiumLifetime": {
             "purchase_date": "2020-11-16T11:16:00Z"
         },
-        "MOZE_IAP_ICONS_COLLECTION_01": {
-            "purchase_date": "2020-11-16T11:16:00Z"
+        "MOZE_IAP_ICONS_TW_01": {
+            "purchase_date": "2020-07-05T18:13:31Z"
         },
-        "MOZE_IAP_ICONS_COLLECTION_02": {
-            "purchase_date": "2020-11-16T11:16:00Z"
+        "MOZE_IAP_ICONS_TW_02": {
+            "purchase_date": "2020-07-05T18:16:42Z"
         },
-        "MOZE_IAP_ICONS_COLLECTION_03": {
-            "purchase_date": "2020-11-16T11:16:00Z"
+        "MOZE_IAP_ICONS_TW_04": {
+            "purchase_date": "2020-07-06T16:43:36Z"
         },
-        "MOZE_IAP_THEMES_WATERCOLOR_02": {
-            "purchase_date": "2020-11-16T11:16:00Z"
-        },
-        "MOZE_IAP_THEMES_MARBLE_01": {
-            "purchase_date": "2020-11-16T11:16:00Z"
-        },
-        "MOZE_IAP_ICONS_FOOD_04": {
-            "purchase_date": "2020-11-16T11:16:00Z"
+        "MOZE_IAP_ICONS_TW_06": {
+            "purchase_date": "2020-07-06T16:44:04Z"
         }
         
     };
@@ -49,6 +43,34 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "is_sandbox": false,
             "original_purchase_date": "2020-11-15T09:56:03Z",
             "purchase_date": "2020-11-15T09:56:03Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_TW_01": [{
+            "id": "40ee5655af",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-05T18:13:31Z",
+            "purchase_date": "2020-07-05T18:13:31Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_TW_02": [{
+            "id": "9f474181d7",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-05T18:16:42Z",
+            "purchase_date": "2020-07-05T18:16:42Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_TW_04": [{
+            "id": "20c8552756",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-06T16:43:36Z",
+            "purchase_date": "2020-07-06T16:43:36Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_TW_06": [{
+            "id": "b0dc464b3d",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-06T16:44:04Z",
+            "purchase_date": "2020-07-06T16:44:04Z",
             "store": "app_store"
         }]
     };

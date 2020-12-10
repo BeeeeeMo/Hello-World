@@ -31,6 +31,34 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "original_purchase_date": "2020-11-15T09:56:03Z",
             "purchase_date": "2020-11-15T09:56:03Z",
             "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_COLLECTION_01": [{
+            "id": "40ee5655af",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-05T18:13:31Z",
+            "purchase_date": "2020-07-05T18:13:31Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_COLLECTION_02": [{
+            "id": "40ee5655af",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-05T18:13:31Z",
+            "purchase_date": "2020-07-05T18:13:31Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_ICONS_COLLECTION_03": [{
+            "id": "40ee5655af",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-05T18:13:31Z",
+            "purchase_date": "2020-07-05T18:13:31Z",
+            "store": "app_store"
+        }],
+        "MOZE_IAP_THEMES_MARBLE_01": [{
+            "id": "40ee5655af",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-07-05T18:13:31Z",
+            "purchase_date": "2020-07-05T18:13:31Z",
+            "store": "app_store"
         }]
     };
     obj["subscriber"]["entitlements"]= {

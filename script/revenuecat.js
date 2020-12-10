@@ -16,23 +16,32 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "purchase_date": "2020-11-16T00:00:00Z",
             "store": "app_store",
             "unsubscribe_detected_at": "2099-12-06T17:52:25Z"
-        },
-	"Airmail_iOS_Yearly": {
-		"is_sandbox": false,
-		"period_type": "active",
-		"billing_issues_detected_at": null,
-		"unsubscribe_detected_at": null,
-		"expires_date": "2099-11-16T00:00:00Z",
-		"original_purchase_date": "2019-10-31T00:00:00Z",
-		"purchase_date": "2019-10-31T00:00:00Z",
-		"store": "app_store"
-	}
+        }
     };
     // PhotoSync 
     obj["subscriber"]["other_purchases"]= {
         "com.touchbyte.PhotoSync.PremiumLifetime": {
             "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "MOZE_IAP_ICONS_COLLECTION_01": {
+            "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "MOZE_IAP_ICONS_COLLECTION_02": {
+            "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "MOZE_IAP_ICONS_COLLECTION_03": {
+            "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "MOZE_IAP_THEMES_WATERCOLOR_02": {
+            "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "MOZE_IAP_THEMES_MARBLE_01": {
+            "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "MOZE_IAP_ICONS_FOOD_04": {
+            "purchase_date": "2020-11-16T11:16:00Z"
         }
+        
     };
     obj["subscriber"]["non_subscriptions"]= {
         "com.touchbyte.PhotoSync.PremiumLifetime": [{
@@ -40,34 +49,6 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "is_sandbox": false,
             "original_purchase_date": "2020-11-15T09:56:03Z",
             "purchase_date": "2020-11-15T09:56:03Z",
-            "store": "app_store"
-        }],
-        "MOZE_IAP_ICONS_COLLECTION_01": [{
-            "id": "40ee5655af",
-            "is_sandbox": false,
-            "original_purchase_date": "2020-07-05T18:13:31Z",
-            "purchase_date": "2020-07-05T18:13:31Z",
-            "store": "app_store"
-        }],
-        "MOZE_IAP_ICONS_COLLECTION_02": [{
-            "id": "40ee5655af",
-            "is_sandbox": false,
-            "original_purchase_date": "2020-07-05T18:13:31Z",
-            "purchase_date": "2020-07-05T18:13:31Z",
-            "store": "app_store"
-        }],
-        "MOZE_IAP_ICONS_COLLECTION_03": [{
-            "id": "40ee5655af",
-            "is_sandbox": false,
-            "original_purchase_date": "2020-07-05T18:13:31Z",
-            "purchase_date": "2020-07-05T18:13:31Z",
-            "store": "app_store"
-        }],
-        "MOZE_IAP_THEMES_MARBLE_01": [{
-            "id": "40ee5655af",
-            "is_sandbox": false,
-            "original_purchase_date": "2020-07-05T18:13:31Z",
-            "purchase_date": "2020-07-05T18:13:31Z",
             "store": "app_store"
         }]
     };
@@ -77,12 +58,7 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "grace_period_expires_date": null,
             "product_identifier": "com.touchbyte.PhotoSync.PremiumLifetime",
             "purchase_date": "2020-11-16T11:16:00Z"
-        },
-	"Airmail Premium": {
-		"expires_date": "2099-12-01T00:00:00Z",
-		"product_identifier": "Airmail_iOS_Yearly",
-		"purchase_date": "2019-12-01T00:00:00Z"
-	}
+        }
     };
     $done(JSON.stringify(obj));
 };

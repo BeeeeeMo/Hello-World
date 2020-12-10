@@ -16,7 +16,17 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "purchase_date": "2020-11-16T00:00:00Z",
             "store": "app_store",
             "unsubscribe_detected_at": "2099-12-06T17:52:25Z"
-        }
+        },
+	"Airmail_iOS_Yearly": {
+		"is_sandbox": false,
+		"period_type": "active",
+		"billing_issues_detected_at": null,
+		"unsubscribe_detected_at": null,
+		"expires_date": "2099-11-16T00:00:00Z",
+		"original_purchase_date": "2019-10-31T00:00:00Z",
+		"purchase_date": "2019-10-31T00:00:00Z",
+		"store": "app_store"
+	}
     };
     // PhotoSync 
     obj["subscriber"]["other_purchases"]= {
@@ -39,7 +49,12 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "grace_period_expires_date": null,
             "product_identifier": "com.touchbyte.PhotoSync.PremiumLifetime",
             "purchase_date": "2020-11-16T11:16:00Z"
-        }
+        },
+	"Airmail Premium": {
+		"expires_date": "2099-12-01T00:00:00Z",
+		"product_identifier": "Airmail_iOS_Yearly",
+		"purchase_date": "2019-12-01T00:00:00Z"
+	}
     };
     $done(JSON.stringify(obj));
 };

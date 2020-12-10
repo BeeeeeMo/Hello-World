@@ -2,6 +2,7 @@ let obj = JSON.parse($response.body);
 let url=$request.url;
 
 if(url.endsWith("offerings")||url.endsWith("products")) {
+    $notify('asd','asd','asd');
 	$done({});
 } else {
     // MOZE 3.0

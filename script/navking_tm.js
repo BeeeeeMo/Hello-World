@@ -3,7 +3,7 @@
 var body = $response.body;
 var obj = JSON.parse(body);
 
-if (obj['output_code'] == -4153){
+if (obj['output_code'] == -4153 || obj['output_code'] == -4151){
     body = JSON.stringify({
         "output_data": {
             "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjSWQiOjYwMzA4NTgsInVJZCI6bnVsbCwic0lkIjozNzg1LCJkSWQiOiI0QUY2N0Y3MS05NTdBLTQyM0ItODcyRC0xQzY5MEU3NUNGNDciLCJsZWdhbElNU0kiOm51bGwsImxvZ1R5cGUiOjIyLCJpYXQiOjE2MDY0OTYyMjMsImV4cCI6NDA5ODQ4MjE2MH0._ZjX8MFkQpS52feNBiGXmj-7zhSpP0W_GHmUb7D_Rbs",

@@ -20,6 +20,7 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
         },
         "output_code": 1
     });
+    $done(body);
 }else{
     $task.fetch(myRequest).then(response => {
         if (response.statusCode == 200){

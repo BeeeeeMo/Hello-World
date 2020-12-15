@@ -56,7 +56,6 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
             });
             $done(body);
         }
-        $done();
     }, reason => {
         // reason.error
         $notify("導航王測速更新", "更新失敗, 抓取離線結果", reason.error); // Error!
@@ -69,7 +68,7 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
                 "CameraDailyUpdate": {
                     "url": $prefs.valueForKey("NK_MAP_URL"),
                     "fileType": 0,
-                    "version": $prefs.valueForKey("NK_MAP_VERSION")
+                    "version": parseInt($prefs.valueForKey("NK_MAP_VERSION"))
                 }
             },
             "output_code": 1

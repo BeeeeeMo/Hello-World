@@ -15,7 +15,7 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
             "CameraDailyUpdate": {
                 "url": $prefs.valueForKey("NK_MAP_URL"),
                 "fileType": 0,
-                "version": parseInt($prefs.valueForKey("NK_MAP_VERSION"))
+                "version": parseInt($prefs.valueForKey("NK_MAP_VERSION")+"04")
             }
         },
         "output_code": 1
@@ -33,7 +33,7 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
                     "CameraDailyUpdate": {
                         "url": url,
                         "fileType": 0,
-                        "version": parseInt(new Date().toJSON().slice(0,10).replace(/-/g,''))
+                        "version": parseInt(new Date().toJSON().slice(0,10).replace(/-/g,'')+"04")
                     }
                 },
                 "output_code": 1
@@ -49,7 +49,7 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
                     "CameraDailyUpdate": {
                         "url": $prefs.valueForKey("NK_MAP_URL"),
                         "fileType": 0,
-                        "version": parseInt($prefs.valueForKey("NK_MAP_VERSION"))
+                        "version": parseInt($prefs.valueForKey("NK_MAP_VERSION")+"04")
                     }
                 },
                 "output_code": 1
@@ -68,7 +68,7 @@ if ($prefs.valueForKey("NK_MAP_VERSION") == new Date().toJSON().slice(0,10).repl
                 "CameraDailyUpdate": {
                     "url": $prefs.valueForKey("NK_MAP_URL"),
                     "fileType": 0,
-                    "version": parseInt($prefs.valueForKey("NK_MAP_VERSION"))
+                    "version": parseInt($prefs.valueForKey("NK_MAP_VERSION")+"04")
                 }
             },
             "output_code": 1

@@ -1,8 +1,8 @@
 var body = $response.body;
-var obj = JSON.parse($response.body)
-var isVIP = obj["AuthType"]
+var obj = JSON.parse(body)
 
-if (isVIP == 0) {
-      $done({body:JSON.stringify({"ResponseCode":1,"ResponseMsg":"","AuthType":1,"AuthExpTime":"2099/11/16"})});
+if (obj["AuthType"] == 0) {
+      body =  JSON.stringify({"ResponseCode":1,"ResponseMsg":"","AuthType":1,"AuthExpTime":"2099/11/16"});
 };
+
 $done(body);

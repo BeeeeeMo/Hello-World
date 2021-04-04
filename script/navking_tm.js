@@ -2,6 +2,8 @@
 
 var body = $response.body;
 var obj = JSON.parse(body);
+var head = $request.headers;
+$notify("TEST", "TEST", head);
 
 if (obj['output_code'] == -4153 || obj['output_code'] == -4151 || obj['output_code'] == -3105){
     body = JSON.stringify({

@@ -30,3 +30,4 @@ if(url.endsWith("Subscription") && request.method == "POST") {
   };
   $done(JSON.stringify(obj));
 };
+$done(JSON.stringify(obj));

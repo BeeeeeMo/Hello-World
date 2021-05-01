@@ -1,0 +1,4 @@
+
+var modifiedHeaders = $request.headers;
+modifiedHeaders['Authorization'] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjSWQiOjY2NDY4NzYsInVJZCI6bnVsbCwic0lkIjowLCJkSWQiOiJBQzkyM0Q0Ni0xOTk2LUFDMTEtMTZGMS04NjA5MDNDRjc2QUEiLCJsZWdhbElNU0kiOm51bGwsImxvZ1R5cGUiOjIyLCJpYXQiOjE2MTk4OTQ3NjcsImV4cCI6MTYxOTg5ODM2N30.4toSKCEehrpvH44twoEByfCRUEiO0SqRhWd5x2FTquU';
+$done({headers : modifiedHeaders});

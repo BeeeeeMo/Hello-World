@@ -3,7 +3,7 @@ let url=$request.url;
 
 $notify(request.method);
 
-if(url.endsWith("Subscription") && request.method == "POST") {
+if(url.endsWith("Subscription") && $request.method == "POST") {
   obj = {
 	"output_data": {
 		"accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjSWQiOjY2MTU4OTEsInVJZCI6bnVsbCwic0lkIjozNzg1LCJkSWQiOiIxQkVFODA5Ni0yQ0RBLTRBQzQtQjFEQS03NjhGQjQwRDMwRDgiLCJsZWdhbElNU0kiOm51bGwsImxvZ1R5cGUiOjIyLCJpYXQiOjE2MTcyNjcyNDUsImV4cCI6MTYxNzI3MDg0NX0.plBpkNjzjn9xectAOBvnRQQCeYYqsPRn3y6faWJpxgk",
@@ -19,7 +19,7 @@ if(url.endsWith("Subscription") && request.method == "POST") {
 	"output_code": 1
   };
   $done(JSON.stringify(obj));
-} else if(url.endsWith("Subscription") && request.method == "GET"){
+} else if(url.endsWith("Subscription") && $request.method == "GET"){
   obj = {
     "output_data": {
       "orderId": "220000917692980",

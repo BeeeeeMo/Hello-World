@@ -1,9 +1,6 @@
 let obj = JSON.parse($response.body);
 let url=$request.url;
 
-
-$notify($request.method);
-
 if(url.endsWith("Subscription") && $request.method == "POST") {
   obj = {
 	"output_data": {

@@ -1,6 +1,8 @@
 const url = "https://navikingtm.autoking.com.tw/api/v3/GetPassV2";
 const data = {"sourceid":"3","did":"AC923D46-1996-AC11-16F1-860903CF76AA"};
-const headers = {'user-agent': 'NaviKingTM/1 CFNetwork/1220.1 Darwin/20.3.0'};
+const headers = {
+  'user-agent': 'NaviKingTM/1 CFNetwork/1220.1 Darwin/20.3.0',
+  'content-type': 'application/json'};
 
 const myRequest = {
   url: url,

@@ -1,4 +1,4 @@
 
 var modifiedHeaders = $request.headers;
-modifiedHeaders['Authorization'] = 'bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjSWQiOjY2NDY4NzYsInVJZCI6bnVsbCwic0lkIjowLCJkSWQiOiJBQzkyM0Q0Ni0xOTk2LUFDMTEtMTZGMS04NjA5MDNDRjc2QUEiLCJsZWdhbElNU0kiOm51bGwsImxvZ1R5cGUiOjIyLCJpYXQiOjE2MTk5MzUwNzIsImV4cCI6MTYxOTkzODY3Mn0.pzgMTaEo-VkogRiEKeEnUoB-zixn5LZxdjPwgnj35Lo';
+modifiedHeaders['Authorization'] = 'bearer ' + $prefs.valueForKey('TM_Token');
 $done({headers : modifiedHeaders});

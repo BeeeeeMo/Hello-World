@@ -12,8 +12,7 @@ $task.fetch(myRequest).then(response => {
       //         $prefs.setValueForKey(url, 'NK_MAP_URL');
       $notify("導航王測速更新", "更新成功", response.body); // Success!
       var obj = JSON.parse(response.body);
-      console.log(obj['output_data']['accessToken']
-
+      console.log(obj['output_data']['accessToken']);
       $done();
     } else {
       $notify("???", "statusCode", response.statusCode); // Success!

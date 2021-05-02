@@ -14,10 +14,10 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     if (response.statusCode == 200){
       // $notify("導航王測速更新", "更新成功", response.body); // Success!
-      // $prefs.setValueForKey(url, 'NK_MAP_URL');
-      $notify("導航王測速更新", "更新成功", response.body); // Success!
+      $notify("導航王TM", "Token更新成功", response.body); // Success!
       var obj = JSON.parse(response.body);
-      console.log(obj['output_data']['accessToken']);
+//       console.log(obj['output_data']['accessToken']);
+      $prefs.setValueForKey(obj['output_data']['accessToken'], 'TM_TOKEN');
       $done();
     }
     $notify("???", "statusCode", response.statusCode); // Success!

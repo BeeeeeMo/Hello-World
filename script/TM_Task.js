@@ -38,7 +38,7 @@ const updateRequest = {
     url: url2,
     headers: headers,
 };
-$notify("導航王測速更新", "Start Task2", today);
+
 $task.fetch(updateRequest).then(response => {
     if (response.statusCode == 200){
         $notify("導航王測速更新", "更新成功", today);

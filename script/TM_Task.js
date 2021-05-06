@@ -45,7 +45,9 @@ $task.fetch(updateRequest).then(response => {
         $prefs.setValueForKey(yyyy + MM + dd, 'NK_MAP_VERSION');
         $prefs.setValueForKey(url2, 'NK_MAP_URL');
     } else {
-        console.log('本日無更新');
+        console.log('本日無更新, 當前版本如下');
+        console.log($prefs.valueForKey("NK_MAP_VERSION"));
+        console.log($prefs.valueForKey("NK_MAP_URL"));
     }
 }, reason => {
     // reason.error

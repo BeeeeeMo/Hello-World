@@ -13,18 +13,19 @@ const myRequest = {
 
 $task.fetch(myRequest).then(response => {
     if (response.statusCode == 200){
+      // $notify("導航王測速更新", "更新成功", response.body); // Success!
       $notify("導航王TM", "Token更新成功", response.body); // Success!
       var obj = JSON.parse(response.body);
       console.log(obj['output_data']['accessToken']);
       $prefs.setValueForKey(obj['output_data']['accessToken'], 'TM_TOKEN');
-//       $done();
+      $done();
     }
     $notify("???", "statusCode", response.statusCode); // Success!
-//     $done();
+    $done();
 }, reason => {
     // reason.error
     $notify("Refresh Key Failed", "失敗", reason.error); // Error!
-//     $done();
+    $done();
 });
 $notify("導航王測速更新", "Task1 Done", today);
 

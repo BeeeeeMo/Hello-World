@@ -14,28 +14,25 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     if (response.statusCode == 200){
       // $notify("導航王測速更新", "更新成功", response.body); // Success!
-//       $notify("導航王TM", "Token更新成功", response.body); // Success!
       var obj = JSON.parse(response.body);
       console.log(obj['output_data']['accessToken']);
       $prefs.setValueForKey(obj['output_data']['accessToken'], 'TM_TOKEN');
-      $done();
+    //   $done();
     }
     $notify("???", "statusCode", response.statusCode); // Success!
-    $done();
+    // $done();
 }, reason => {
     // reason.error
     $notify("Refresh Key Failed", "失敗", reason.error); // Error!
-    $done();
+    // $done();
 });
-$notify("導航王測速更新", "Task1 Done", '');
 
-
-var TimeNow= new Date();
+var TimeNow = new Date();
 var yyyy = TimeNow.toLocaleDateString().slice(0,4)
 var MM = (TimeNow.getMonth()+1<10 ? '0' : '')+(TimeNow.getMonth()+1);
 var dd = (TimeNow.getDate()<10 ? '0' : '')+TimeNow.getDate();
 let today = yyyy + "_" + MM + "_" + dd;
-$console.log(today);
+console.log(today);
 const url2 = "https://download.localking.com.tw/cdnfiles/NaviKingUpdate/SpeedCameras/daily_camera_" + today + "_04.dat";
 const updateRequest = {
     url: url2,
@@ -45,12 +42,11 @@ $notify("導航王測速更新", "Start Task2", today);
 $task.fetch(updateRequest).then(response => {
     if (response.statusCode == 200){
         $notify("導航王測速更新", "更新成功", today);
-        $prefs.setValueForKey(new Date().toJSON().slice(0,10).replace(/-/g,''), 'NK_MAP_VERSION'+"04");
+        $prefs.setValueForKey(yyyy + MM + dd, 'NK_MAP_VERSION');
         $prefs.setValueForKey(url, 'NK_MAP_URL');
     } else {
-        $notify("導航王測速更新", "更新失敗", today);
+        console.log('本日無更新');
     }
-    $done();
 }, reason => {
     // reason.error
     $notify("導航王測速更新", "更新失敗", reason.error); // Error!

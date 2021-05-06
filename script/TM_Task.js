@@ -33,12 +33,13 @@ var MM = (TimeNow.getMonth()+1<10 ? '0' : '')+(TimeNow.getMonth()+1);
 var dd = (TimeNow.getDate()<10 ? '0' : '')+TimeNow.getDate();
 let today = yyyy + "_" + MM + "_" + dd;
 console.log(today);
+
 const url2 = "https://download.localking.com.tw/cdnfiles/NaviKingUpdate/SpeedCameras/daily_camera_" + today + "_04.dat";
 const updateRequest = {
     url: url2,
     headers: headers,
 };
-
+console.log("Start 2");
 $task.fetch(updateRequest).then(response => {
     console.log(response.statusCode);
     if (response.statusCode == 200){
@@ -54,4 +55,5 @@ $task.fetch(updateRequest).then(response => {
     // reason.error
     $notify("導航王測速更新", "更新失敗", reason.error); // Error!
 });
+console.log("Done!");
 $done();

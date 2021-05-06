@@ -26,7 +26,7 @@ $task.fetch(myRequest).then(response => {
     $notify("Refresh Key Failed", "失敗", reason.error); // Error!
 //     $done();
 });
-
+$notify("導航王測速更新", "Task1 Done", today);
 
 
 var TimeNow= new Date();
@@ -34,21 +34,20 @@ var yyyy = TimeNow.toLocaleDateString().slice(0,4)
 var MM = (TimeNow.getMonth()+1<10 ? '0' : '')+(TimeNow.getMonth()+1);
 var dd = (TimeNow.getDate()<10 ? '0' : '')+TimeNow.getDate();
 let today = yyyy + "_" + MM + "_" + dd;
-
+$console.log(today);
 const url2 = "https://download.localking.com.tw/cdnfiles/NaviKingUpdate/SpeedCameras/daily_camera_" + today + "_04.dat";
 const updateRequest = {
     url: url2,
     headers: headers,
 };
-
+$notify("導航王測速更新", "Start Task2", today);
 $task.fetch(updateRequest).then(response => {
     if (response.statusCode == 200){
         $notify("導航王測速更新", "更新成功", today);
         $prefs.setValueForKey(new Date().toJSON().slice(0,10).replace(/-/g,''), 'NK_MAP_VERSION'+"04");
         $prefs.setValueForKey(url, 'NK_MAP_URL');
-        $done();
     } else {
-        $done();
+        $notify("導航王測速更新", "更新失敗", body);
     }
     $done();
 }, reason => {

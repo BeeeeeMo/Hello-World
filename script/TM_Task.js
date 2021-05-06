@@ -40,6 +40,7 @@ const updateRequest = {
 };
 
 $task.fetch(updateRequest).then(response => {
+    console.log(response.statusCode);
     if (response.statusCode == 200){
         $notify("導航王測速更新", "更新成功", today);
         $prefs.setValueForKey(yyyy + MM + dd, 'NK_MAP_VERSION');

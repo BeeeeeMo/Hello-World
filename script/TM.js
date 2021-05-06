@@ -29,9 +29,9 @@ if (url.endsWith("Subscription") && $request.method == "POST") {
         "output_code": 1
     };
     $done(JSON.stringify(obj));
-} else if (url.endsWith("ClientUpdate")){
-    $notify("導航王測速更新", "更新失敗, 抓取離線結果", reason.error)	
-    obj = JSON.stringify({
+} else if (url.endsWith("ClientUpdate") && $request.method == "POST"){
+    $notify("導航王測速更新", "更新失敗, 抓取離線結果")	
+    obj = {
         "output_data": {
             "ClientUpdate": [{
                 "NaviKingUpdate": []
@@ -44,6 +44,6 @@ if (url.endsWith("Subscription") && $request.method == "POST") {
             }
         },
         "output_code": 1
-    });
+    };
 };
 $done(JSON.stringify(obj));

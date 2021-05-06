@@ -43,7 +43,7 @@ $task.fetch(updateRequest).then(response => {
     if (response.statusCode == 200){
         $notify("導航王測速更新", "更新成功", today);
         $prefs.setValueForKey(yyyy + MM + dd, 'NK_MAP_VERSION');
-        $prefs.setValueForKey(url, 'NK_MAP_URL');
+        $prefs.setValueForKey(url2, 'NK_MAP_URL');
     } else {
         console.log('本日無更新');
     }

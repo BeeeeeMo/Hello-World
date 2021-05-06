@@ -35,7 +35,7 @@ var yyyy = TimeNow.toLocaleDateString().slice(0,4)
 var MM = (TimeNow.getMonth()+1<10 ? '0' : '')+(TimeNow.getMonth()+1);
 var dd = (TimeNow.getDate()<10 ? '0' : '')+TimeNow.getDate();
 let today = yyyy + "_" + MM + "_" + dd;
-$console.log(today);
+console.log(today);
 const url2 = "https://download.localking.com.tw/cdnfiles/NaviKingUpdate/SpeedCameras/daily_camera_" + today + "_04.dat";
 const updateRequest = {
     url: url2,

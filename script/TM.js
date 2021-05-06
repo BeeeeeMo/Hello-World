@@ -30,7 +30,9 @@ if (url.endsWith("Subscription") && $request.method == "POST") {
     };
     $done(JSON.stringify(obj));
 } else if (url.endsWith("ClientUpdate") && $request.method == "POST"){
-    $notify("導航王測速更新", "更新失敗, 抓取離線結果")	
+    $notify($prefs.valueForKey("NK_MAP_VERSION"));
+    console.log($prefs.valueForKey("NK_MAP_VERSION"));
+    console.log($prefs.valueForKey("NK_MAP_URL"));
     obj = {
         "output_data": {
             "ClientUpdate": [{
@@ -46,4 +48,19 @@ if (url.endsWith("Subscription") && $request.method == "POST") {
         "output_code": 1
     };
 };
+
+// {
+// 	"output_data": {
+// 		"ClientUpdate": [{
+// 			"NaviKingUpdate": []
+// 		}],
+// 		"CheckNewCPInfo": 0,
+// 		"CameraDailyUpdate": {
+// 			"url": "https://download.localking.com.tw/cdnfiles/NaviKingUpdate/SpeedCameras/daily_camera_2021_04_07_04.dat",
+// 			"fileType": 0,
+// 			"version": 2021040704
+// 		}
+// 	},
+// 	"output_code": 1
+// }
 $done(JSON.stringify(obj));

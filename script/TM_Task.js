@@ -47,7 +47,7 @@ $task.fetch(updateRequest).then(response => {
         $prefs.setValueForKey(new Date().toJSON().slice(0,10).replace(/-/g,''), 'NK_MAP_VERSION'+"04");
         $prefs.setValueForKey(url, 'NK_MAP_URL');
     } else {
-        $notify("導航王測速更新", "更新失敗", body);
+        $notify("導航王測速更新", "更新失敗", today);
     }
     $done();
 }, reason => {

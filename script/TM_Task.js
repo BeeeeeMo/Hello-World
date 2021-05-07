@@ -33,6 +33,27 @@ $task.fetch(myRequest).then(response => {
     // $done();
 });
 
+$task.fetch(myRequest).then(response => {
+    if (response.statusCode == 200) {
+        // $notify("導航王測速更新", "更新成功", response.body); // Success!
+        var obj = JSON.parse(response.body);
+        console.log(obj['output_data']['accessToken']);
+        var TM_TOKEN = $prefs.setValueForKey(obj['output_data']['accessToken'], 'TM_TOKEN');
+        if (!TM_TOKEN){
+            $notify("Token保存錯誤", "", "QQ");
+        } else {
+            $notify("Token保存成功", "", "QQ");
+        }
+        //   $done();
+    }
+    $notify("???", "statusCode", response.statusCode); // Success!
+    // $done();
+}, reason => {
+    // reason.error
+    $notify("Refresh Key Failed", "失敗", reason.error); // Error!
+    // $done();
+});
+
 var TimeNow = new Date();
 var yyyy = TimeNow.toLocaleDateString().slice(0, 4)
 var MM = (TimeNow.getMonth() + 1 < 10 ? '0' : '') + (TimeNow.getMonth() + 1);

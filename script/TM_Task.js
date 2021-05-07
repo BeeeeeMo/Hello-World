@@ -17,7 +17,12 @@ $task.fetch(myRequest).then(response => {
         // $notify("導航王測速更新", "更新成功", response.body); // Success!
         var obj = JSON.parse(response.body);
         console.log(obj['output_data']['accessToken']);
-        $prefs.setValueForKey(obj['output_data']['accessToken'], 'TM_TOKEN');
+        var TM_TOKEN = $prefs.setValueForKey(obj['output_data']['accessToken'], 'TM_TOKEN');
+        if (!TM_TOKEN){
+            $notify("Token保存錯誤", "", "QQ");
+        } else {
+            $notify("Token保存成功", "", "QQ");
+        }
         //   $done();
     }
     $notify("???", "statusCode", response.statusCode); // Success!
@@ -45,8 +50,18 @@ $task.fetch(updateRequest).then(response => {
     if (response.statusCode == 200) {
         $notify("導航王測速更新", "更新成功", today);
         console.log("測速照相資料更新成功!")
-        $prefs.setValueForKey(yyyy + MM + dd, 'NK_MAP_VERSION');
-        $prefs.setValueForKey(url2, 'NK_MAP_URL');
+        var NK_MAP_VERSION = $prefs.setValueForKey(yyyy + MM + dd, 'NK_MAP_VERSION');
+        var NK_MAP_URL = $prefs.setValueForKey(url2, 'NK_MAP_URL');
+        if (!NK_MAP_VERSION) {
+            $notify("NK_MAP_VERSION 保存錯誤", "", "QQ");
+        } else {
+            $notify("NK_MAP_VERSION 保存成功", "", "QQ");
+        }
+        if (!NK_MAP_URL) {
+            $notify("NK_MAP_URL 保存錯誤", "", "QQ");
+        } else {
+            $notify("NK_MAP_URL 保存成功", "", "QQ");
+        }
     } else {
         console.log('本日無更新, 當前版本如下');
     }

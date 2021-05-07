@@ -1,4 +1,7 @@
 
 var modifiedHeaders = $request.headers;
-modifiedHeaders['Authorization'] = 'bearer ' + $prefs.valueForKey('TM_TOKEN');
+let url = $request.url;
+if (!url.endsWith("GetPassV2")){
+    modifiedHeaders['Authorization'] = 'bearer ' + $prefs.valueForKey('TM_TOKEN');
+}
 $done({headers : modifiedHeaders});

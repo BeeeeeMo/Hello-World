@@ -57,7 +57,7 @@ $task.fetch(camUpdate).then(response => {
         // $done();
     } else {
         // $done();
-        $notify("導航王測速更新", "更新失敗 HTTP", .statusCode);
+        $notify("導航王測速更新", "更新失敗 HTTP", response.statusCode);
     }
     $done();
 }, reason => {

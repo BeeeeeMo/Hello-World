@@ -10,5 +10,5 @@ obj['user']['features']['edit'] = "show";
 obj['user']['features']['music'] = "show";
 obj['user']['features']['settings_premium_trigger'] = "hide";
 obj['user']['features']['memories_premium_trigger'] = "hide";
-body = JSON.stringify(obj);
-$done({body});
+// body = JSON.stringify(obj);
+$done({body: jSON.stringify(obj)});

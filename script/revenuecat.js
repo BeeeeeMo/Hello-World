@@ -82,6 +82,6 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "purchase_date": "2020-11-16T11:16:00Z"
         }
     };
-    $done(JSON.stringify(obj));
+    $done({body: JSON.stringify(obj)});
 };
 

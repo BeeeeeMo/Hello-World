@@ -1,7 +1,7 @@
 // api.moze.app
 // ^https://api\.moze\.app/iap/transaction-record/
 
-body = JSON.stringify({
+obj = JSON.stringify({
 	"success": true,
 	"data": [{
 		"id": "000000000000000",
@@ -55,4 +55,4 @@ body = JSON.stringify({
 	}]
 });
 
-$done(body);
+$done({body: obj});

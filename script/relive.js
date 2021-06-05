@@ -1,14 +1,14 @@
 let body = $response.body;
-var obj = JSON.parse($response.body)
+let obj = JSON.parse($response.body);
 
-obj['user']['premium'] = true;
-obj['user']['max_photos'] = 50;
-obj['user']['max_moments'] = 50;
-obj['user']['max_duration'] = 60;
-obj['user']['features']['import'] = "show";
-obj['user']['features']['edit'] = "show";
-obj['user']['features']['music'] = "show";
-obj['user']['features']['settings_premium_trigger'] = "hide";
-obj['user']['features']['memories_premium_trigger'] = "hide";
+obj['data']['user']['premium'] = true;
+obj['data']['user']['max_photos'] = 50;
+obj['data']['user']['max_moments'] = 50;
+obj['data']['user']['max_duration'] = 60;
+obj['data']['user']['features']['import'] = "show";
+obj['data']['user']['features']['edit'] = "show";
+obj['data']['user']['features']['music'] = "show";
+obj['data']['user']['features']['settings_premium_trigger'] = "hide";
+obj['data']['user']['features']['memories_premium_trigger'] = "hide";
 // body = JSON.stringify(obj);
 $done({body: jSON.stringify(obj)});

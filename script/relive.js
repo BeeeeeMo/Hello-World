@@ -11,4 +11,5 @@ obj['data']['user']['features']['music'] = "show";
 obj['data']['user']['features']['settings_premium_trigger'] = "hide";
 obj['data']['user']['features']['memories_premium_trigger'] = "hide";
 // body = JSON.stringify(obj);
+console.log(obj);
 $done({body: jSON.stringify(obj)});

@@ -51,6 +51,13 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "original_purchase_date": "2020-07-05T18:13:31Z",
             "purchase_date": "2020-07-05T18:13:31Z",
             "store": "app_store"
+        }],
+        "com.onmyway133.PastePal.pro": [{
+            "id": "f8ce974e35",
+            "is_sandbox": false,
+            "original_purchase_date": "2020-11-15T09:56:03Z",
+            "purchase_date": "2020-11-11T11:16:00Z",
+            "store": "app_store"
         }]
         // "MOZE_IAP_ICONS_TW_02": [{
         //     "id": "9f474181d7",
@@ -80,6 +87,12 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "grace_period_expires_date": null,
             "product_identifier": "com.touchbyte.PhotoSync.PremiumLifetime",
             "purchase_date": "2020-11-16T11:16:00Z"
+        },
+        "pro": {
+            "expires_date": null,
+            "grace_period_expires_date": null,
+            "product_identifier": "com.onmyway133.PastePal.pro",
+            "purchase_date": "2020-11-11T11:16:00Z"
         }
     };
     $done(JSON.stringify(obj));

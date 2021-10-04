@@ -225,6 +225,7 @@ if (bundle_id == "tw.com.cw.commonwealth.cwmag") {
 };
 }
 
+// Paste
 if (bundle_id == "com.wiheads.paste") {
 	obj = {
 	  "environment": "Production",

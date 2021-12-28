@@ -16,7 +16,19 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
             "purchase_date": "2020-11-16T00:00:00Z",
             "store": "app_store",
             "unsubscribe_detected_at": "2099-12-06T17:52:25Z"
-        }
+        },
+				"com.RuinScenery.noad": {
+						"billing_issues_detected_at": null,
+						"expires_date": "20-01-27T21:19:34Z",
+						"grace_period_expires_date": null,
+						"is_sandbox": false,
+						"original_purchase_date": "2021-12-27T21:19:35Z",
+						"ownership_type": "PURCHASED",
+						"period_type": "trial",
+						"purchase_date": "2021-12-27T21:19:34Z",
+						"store": "app_store",
+						"unsubscribe_detected_at": "2021-12-27T21:23:00Z"
+				}
     };
     // PhotoSync 
     obj["subscriber"]["other_purchases"]= {
@@ -81,6 +93,8 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
         //     "store": "app_store"
         // }]
     };
+	
+	
     obj["subscriber"]["entitlements"]= {
         "premium": {
             "expires_date": null,

@@ -4,7 +4,7 @@
 var obj = JSON.parse($response.body);
 
 obj["subscription"] = {
-  "tier": "Pro",
+  "tier": "BusinessFree",
   "subscriptionActive": true,
   "expirationDate": 4098510960000,
   "subscriptionType": "yearly",
